@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA;  
+            background-image: url('windowsxp.png'); /* Ganti dengan gambar windowsxp.png */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        .logout-btn {
+            background-color: #5F6D7E; /* Grey-blue color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px; 
+            margin-left: auto;
+            margin-right: auto;
+            display: block; 
+            width: fit-content; 
+        }
+        .logout-btn:hover {
+            background-color: #4e5b6d; /* Slightly darker grey-blue */
+        }
+        .colorful-marquee {
+            width: 100%;
+            background: #5F6D7E; /* Grey-blue color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .biodata-container {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .biodata-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .biodata-text {
+            max-width: 400px;
+            text-align: left;
+        }
+        .image-container {
+            flex: 0 0 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .social-link i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="colorful-marquee">
+        <marquee behavior="scroll" direction="left">
+            <span>Selamat Datang!</span>
+        </marquee>
+    </div>
+
+    <div class="biodata-container">
+        <div class="biodata-content">
+            <h2>Biodata</h2>
+            <div class="biodata-text">
+                <p>Nama: M Musyawir Halim</p>
+                <p>NIM: 09031182328113</p>
+                <p>Program Studi: Sistem Informasi</p>
+                <p>Fakultas: Ilmu Komputer</p>
+                <p>Universitas: Sriwijaya</p>
+                <br>
+                <p>Saya berkuliah di Universitas Sriwijaya Program Studi Sistem Informasi</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Logout
+    </a>
+
+</body>
+</html>
